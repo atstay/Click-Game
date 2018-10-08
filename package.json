@@ -2,13 +2,12 @@
   "name": "clicky-game",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://atstay.github.io/Click-Game/",
   "dependencies": {
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "2.0.4"
   },
-
-  "homepage" : "https://atstay.github.io/ClickyReact/",
 
   "scripts": {
     "start": "react-scripts start",
