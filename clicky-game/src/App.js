@@ -46,8 +46,15 @@ class App extends Component {
   // Map over this.state.cards and render a cardCard component for each card object
   render() {
     return (
+      <div className="App">
+        <header className="App-header">
+          <h1 className="App-title">Tricky Clicky Game</h1>
+          <p className="App-intro">
+            Don't click the same image twice!
+          </p>
+        </header>
       <Wrapper>
-        <Score score={this.state.score} highscore={this.state.highscore}>Clicky Game</Score>
+        <Score score={this.state.score} highscore={this.state.highscore}></Score>
         {this.state.cards.map(card => (
           <Card
             clickCount={this.clickCount}
@@ -57,6 +64,7 @@ class App extends Component {
           />
         ))}
       </Wrapper>
+      </div>
     );
   }
 }
